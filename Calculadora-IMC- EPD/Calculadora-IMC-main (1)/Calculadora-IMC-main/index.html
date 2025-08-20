@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="em">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <meta
+      name="description"
+      content="Esta pagina tiene como utilidad calcular el imc de una persona de manera eificiente y sencilla"
+    />
+    <meta name="author" content="Lissandro" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="img/" />
+    <script src="main.js"></script>
+    <title>Calculadora de IMC</title>
+  </head>
+  <body>
+    <h1>Calculadora de IMC</h1>
+    <div class="contenedor">
+      <h3></h3>
+      <!--no borrar -->
+      <div class="datos">
+        <div class="personal">
+          <div>
+            <label for="peso">Peso</label>
+            <input
+              type="text"
+              placeholder="Peso em Kg"
+              id="peso"
+              name="peso"
+              autocomplete="off"
+            />
+          </div>
+          <div>
+            <label for="altura">Altura</label>
+            <input
+              type="text"
+              placeholder="Altura (em metros)"
+              id="altura"
+              name="altura"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <div class="button_bg">
+          <button class="boton" onclick="calcular()">Calcular</button>
+        </div>
+      </div>
+
+      <div class="are_result">
+        <section class="resultado">
+          <h2 class="result_title">Resultado</h2>
+          <p id="result">---</p>
+        </section>
+        <section class="contendor_imagen-resultado">
+            <img
+              class="imagencita"
+              src="img/Elg2.jpg"
+              alt="imagen resultado"
+            />
+        </section>
+      </div>
+      <div class="author">
+        <a href="https://github.com/Caabraldev" target="_blank">&copy;ELG Softwares</a>
+      </div>
+    </div>
+  </body>
+</html>

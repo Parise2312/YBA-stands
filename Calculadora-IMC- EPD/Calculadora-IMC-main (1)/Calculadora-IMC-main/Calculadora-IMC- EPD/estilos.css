@@ -1,0 +1,80 @@
+/* Fonte clássica e fundo icônico */
+body {
+  font-family: 'Microsoft Sans Serif', Tahoma, sans-serif;
+  background: #008080;
+  padding: 50px;
+  color: black;
+}
+
+/* Janela base */
+.window {
+  background: #c0c0c0;
+  border: 2px solid black;
+  width: 300px;
+  box-shadow: inset -1px -1px white, inset 1px 1px #808080;
+}
+
+/* Barra de título */
+.title-bar {
+  background: navy;
+  color: white;
+  padding: 3px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.controls .btn {
+  background: #c0c0c0;
+  border: 2px solid black;
+  box-shadow: inset -1px -1px white, inset 1px 1px #808080;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  padding: 0;
+  margin-left: 2px;
+  cursor: pointer;
+}
+
+/* Corpo da janela */
+.window-body {
+  padding: 10px;
+}
+
+/* Botões retrô */
+.btn {
+  background: #c0c0c0;
+  border: 2px solid black;
+  box-shadow: inset -1px -1px white, inset 1px 1px #808080;
+  padding: 3px 10px;
+  margin-right: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:active {
+  box-shadow: inset 1px 1px white, inset -1px -1px #808080;
+}
+
+/* Campos de entrada */
+input {
+  width: 100%;
+  padding: 2px;
+  font-size: 14px;
+  border: 2px solid black;
+  box-shadow: inset -1px -1px white, inset 1px 1px #808080;
+  background: #fff;
+}
+
+/* Resultado */
+#resultado {
+  margin-top: 10px;
+  background: white;
+  padding: 5px;
+  border: 2px solid black;
+  box-shadow: inset -1px -1px white, inset 1px 1px #808080;
+}

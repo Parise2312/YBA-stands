@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de IMC - Windows 98</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="window">
+    <div class="title-bar">
+      <span class="title">Calculadora de IMC</span>
+      <div class="controls">
+        <button class="btn">_</button>
+        <button class="btn">▢</button>
+        <button class="btn">X</button>
+      </div>
+    </div>
+    <div class="window-body">
+      <label>Peso (kg):</label><br>
+      <input type="number" id="peso"><br><br>
+
+      <label>Altura (m):</label><br>
+      <input type="number" id="altura" step="0.01"><br><br>
+
+      <button class="btn" onclick="calcularIMC()">Calcular IMC</button>
+      <button class="btn" onclick="limpar()">Limpar</button>
+
+      <p id="resultado"></p>
+    </div>
+  </div>
+
+  <script>
+    function calcularIMC() {
+      const peso = parseFloat(document.getElementById('peso').value);
+      const altura = parseFloat(document.getElementById('altura').value);
+      const resultado = document.getElementById('resultado');
+
+      if (!peso || !altura) {
+        resultado.textContent = "Preencha todos os campos!";
+        return;
+      }
+
+      const imc = (peso / (altura * altura)).toFixed(2);
+      resultado.textContent = `Seu IMC é ${imc}`;
+    }
+
+    function limpar() {
+      document.getElementById('peso').value = '';
+      document.getElementById('altura').value = '';
+      document.getElementById('resultado').textContent = '';
+    }
+  </script>
+</body>
+</html>
