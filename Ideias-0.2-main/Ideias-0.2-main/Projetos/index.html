@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Kronos - Ranking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Projeto Kronos</h1>
+    </header>
+
+    <main>
+        <section id="profiles">
+            <!-- Perfis vão ser adicionados via JS -->
+        </section>
+
+        <section id="ranking">
+            <h2>Ranking de Poderes</h2>
+            <div class="buttons">
+                <button onclick="compararPor('forca')">Força</button>
+                <button onclick="compararPor('velocidade')">Velocidade</button>
+                <button onclick="compararPor('flexibilidade')">Flexibilidade</button>
+                <button onclick="compararPor('rank')">Poder Rank</button>
+            </div>
+            <ol id="ranking-list"></ol>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <main>
+        <section id="profiles">
+            <!-- Perfis vão ser adicionados via JS -->
+        </section>
+    
+        <section id="ranking">
+            <h2>Ranking de Poderes</h2>
+            <div class="buttons">
+                <button onclick="compararPor('forca')">Força</button>
+                <button onclick="compararPor('velocidade')">Velocidade</button>
+                <button onclick="compararPor('flexibilidade')">Flexibilidade</button>
+                <button onclick="compararPor('rank')">Poder Rank</button>
+            </div>
+            <ol id="ranking-list"></ol>
+        </section>
+    
+        <section id="compare">
+            <h2>Comparar Duas Pessoas</h2>
+            <div class="compare-controls">
+                <select id="person1"></select>
+                <select id="person2"></select>
+                <button onclick="compararDuas()">Comparar</button>
+            </div>
+            <div id="compare-result"></div>
+        </section>
+    </main>
+    
+</body>
+</html>
