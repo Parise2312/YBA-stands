@@ -1,6 +1,6 @@
 const profiles = [
     { name: "Star Platinum", power: "Aura", image: "imgs/SP_New_Pose_FIXED.jpg", stats: { forca: 7, velocidade: 7, flexibilidade: 5, rank: 6 } },
-    { name: "Star Platinum O mundo", power: "Aura", image: "imgs/SPTW_New_Pose_FIXED.jpg", stats: { forca: 10, velocidade: 8, flexibilidade: 6, rank: 9 } },
+    { name: "Star Platinum O mundo", power: "Aura", image: "imgs/SPTW_New_Pose_FIXED.jpg", stats: { forca: 9, velocidade: 8, flexibilidade: 6, rank: 9 } },
     { name: "The world", power: "Aura", image: "imgs/TH.jpg", stats: { forca: 7, velocidade: 8, flexibilidade: 6, rank: 7 } },
     { name: "The world Over Haven", power: "Aura", image: "imgs/THOH.jpg", stats: { forca: 10, velocidade: 9, flexibilidade: 7, rank: 10 } },
     { name: "Golden experience", power: "Aura", image: "imgs/GE_Current_model.jpg", stats: { forca: 4, velocidade: 5, flexibilidade: 8, rank: 7 } },
@@ -87,3 +87,4 @@ function compararDuas(){
         if(vencedor){ document.querySelector(`img[alt="${vencedor.name}"]`).classList.add("winner"); document.querySelector(`img[alt="${perdedor.name}"]`).classList.add("loser"); }
     });
 }
+
